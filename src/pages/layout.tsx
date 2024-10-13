@@ -114,9 +114,10 @@ export function Layout() {
         }
 
         const setTabPosition = () => {
-        const currentTab = tabsRef.current[activeTabIndex] as HTMLElement;
-        setTabUnderlineLeft(currentTab?.offsetLeft ?? 0);
-        setTabUnderlineWidth(currentTab?.clientWidth ?? 0);
+            window.scrollTo(0,0)
+            const currentTab = tabsRef.current[activeTabIndex] as HTMLElement;
+            setTabUnderlineLeft(currentTab?.offsetLeft ?? 0);
+            setTabUnderlineWidth(currentTab?.clientWidth ?? 0);
         };
 
         setTabPosition();
