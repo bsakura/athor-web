@@ -49,28 +49,33 @@ const HeroSubheader = styled.h2`
 `
 
 const ContentContainer = styled.div`
-    padding: 180px 80px;
+    padding: 80px 80px;
     display: flex;
+    gap: 50px;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ababab;
+    justify-content: start;
+
+    > img {
+      width: 40vw;
+      aspect-ratio: 6 / 4;
+    }
 `
 
 const ContentTitle = styled.h2`
-    color: black;
-    font-family: Inter;
-    font-size: 60px;
-    font-weight: 700;
+    color: #202124;
+    font-size: 40px;
+    font-weight: 500;
     margin: 10px 0;
 
 `
 
 const ContentText = styled.p`
-    color: black;
-    font-family: Inter;
+    color: #202124CF;
+    font-family: Spline Sans;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
 
+    width: 30vw;
 `
 
 export function InvestmentManagement() {
@@ -95,56 +100,115 @@ export function InvestmentManagement() {
                 data-aos-offset="400"
                 data-aos-easing="ease-in"
             >
+                <img src={"/invma/austria.png"} alt="rmz - austria" />
                 <div>
                     <ContentTitle>
-                        International Trade
+                        Austria
                     </ContentTitle>
                     <ContentText>
-                        With more than 25 years of international trading experience in commodities, raw materials, automotive and spare parts, our group provides a comprehensive solution for purchasing, distribution and logistics to and from Europe 
+                      Our Austrian Headquarter with offices in both Vienna and Linz is the center of our trading activity and the group's largest investment fund with a focus on European Public and Private Equities
                     </ContentText>
-                </div>
-                <div style={{marginLeft: 100}}>
-                    <img src={"/opbus/rmz.png"} width={200} alt="rmz - austria" />
-                </div>
-                <div style={{marginLeft: 40}}>
-                    <img src={"/opbus/powerline.png"} width={400} alt="powerline" />
+                    <br />
+                    <br />
+                    <div style={{
+                      display: 'flex',
+                      gap: 16
+                    }}>
+                      <img src="athor/holding.png" height={50} alt="holding" />
+                      <img src="athor/management.png" height={50} alt="management" />
+                    </div>
                 </div>
             </ContentContainer>
             <ContentContainer
                 data-aos="fade-up"
-                data-aos-offset="400"
+                data-aos-offset="300"
                 data-aos-easing="ease-in"
             >
-                <div style={{marginRight: 200, padding: 40}}>
-                    <img src={"/opbus/fininvest.png"} width={400} alt="financial investment group" />
-                </div>
+                <img src={"/invma/sg.png"} alt="rmz - singapore" />
                 <div>
                     <ContentTitle>
-                        Trade Finance
+                        Singapore
                     </ContentTitle>
                     <ContentText>
-                    Through our extensive relationships with banks, financial service providers and relevant funding partners we provide flexible solutions for trade related financing needs 
+                        Our Singapore branch was created with the intention of diversifying our portfolio across Asia-Pacific focusing on Equity investments in both developed and emerging markets
                     </ContentText>
+                    <br />
+                    <br />
+                    <div style={{
+                      display: 'flex',
+                      gap: 16
+                    }}>
+                      <img src="athor/sglim.png" height={50} alt="sg lim" />
+                    </div>
                 </div>
             </ContentContainer>
             <ContentContainer
                 data-aos="fade-up"
-                data-aos-offset="400"
+                data-aos-offset="300"
                 data-aos-easing="ease-in"
             >
+                <img src={"/invma/switz.png"} alt="rmz - switzerland" />
                 <div>
                     <ContentTitle>
-                        Trade Advisory
+                        Switzerland
                     </ContentTitle>
                     <ContentText>
-                        Our Athor Trade Advisory engages in co operations with international partners on an advisory basis addressing issues such as country specific logistics, product homologations and distributions
+                        Switzerland with its internationally renown image of stability and financial security serves as a strategic safe haven for the Athor Group’s investments, especially with regards to currency and commodity markets
                     </ContentText>
+                    <br />
+                    <br />
+                    <div style={{
+                      display: 'flex',
+                      gap: 16
+                    }}>
+                      <img src="athor/switz.png" height={50} alt="holding" />
+                    </div>
                 </div>
-                <div style={{marginLeft: 90}}>
-                    <img src={"/opbus/athorhandel.png"} width={270} alt="rmz - austria" />
+            </ContentContainer>
+            <ContentContainer
+                data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-easing="ease-in"
+            >
+                <img src={"/invma/spain.png"} alt="rmz - spain" />
+                <div>
+                    <ContentTitle>
+                        Spain
+                    </ContentTitle>
+                    <ContentText>
+                    As Europe's frontier market, our Spanish office not only takes on a supporting role within our operational business but represents a significant proportion of Athor Group's real estate investments
+                    </ContentText>
+                    <br />
+                    <br />
+                    <div style={{
+                      display: 'flex',
+                      gap: 16
+                    }}>
+                      <img src="athor/real.png" height={50} alt="real" />
+                    </div>
                 </div>
-                <div style={{marginLeft: 90}}>
-                    <img src={"/opbus/athorswitz.png"} width={270} alt="powerline" />
+            </ContentContainer>
+            <ContentContainer
+                data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-easing="ease-in"
+            >
+                <img src={"/invma/turkey.png"} alt="rmz - turkey" />
+                <div>
+                    <ContentTitle>
+                        Turkey
+                    </ContentTitle>
+                    <ContentText>
+                    As Europe's frontier market, our Spanish office not only takes on a supporting role within our operational business but represents a significant proportion of Athor Group's real estate investments
+                    </ContentText>
+                    <br />
+                    <br />
+                    <div style={{
+                      display: 'flex',
+                      gap: 16
+                    }}>
+                      <img src="athor/nova.png" height={50} alt="nova" />
+                    </div>
                 </div>
             </ContentContainer>
         </div>

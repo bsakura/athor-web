@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from './pages/layout';
@@ -10,6 +9,8 @@ import { InvestmentManagement } from './pages/investmentManagement';
 
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import { RealAsset } from './pages/realAssets';
+import { About } from './pages/about';
 
 function App() {
   useEffect(() => {
@@ -22,28 +23,12 @@ function App() {
         <Route index element={<Home />} />
         <Route path='operational-business' element={<OperationBusiness />} />
         <Route path='investment-management' element={<InvestmentManagement />} />
+        <Route path='real-asset' element={<RealAsset />} />
+        <Route path='about' element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
-  // return (
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={logo} className="App-logo" alt="logo" />
-  //       <p>
-  //         Edit <code>src/App.tsx</code> and save to reload.
-  //       </p>
-  //       <a
-  //         className="App-link"
-  //         href="https://reactjs.org"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Learn React
-  //       </a>
-  //     </header>
-  //   </div>
-  // );
 }
 
 export default App;

@@ -88,8 +88,8 @@ const navLinkList = [
         url: "/investment-management"
     },
     {
-        title: "Real Assets",
-        url: "/real-assets"
+        title: "Real Asset",
+        url: "/real-asset"
     },
     {
         title: "About",
